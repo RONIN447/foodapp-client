@@ -8,10 +8,7 @@ const Users = () => {
   const axiosSecure = useAxiosSecure();
   const { refetch, data: users = [] } = useQuery({
     queryKey: ["users"],
-    // queryFn: async () => {
-    //   const res = await fetch(`https://foodapp-server-1-a24t.onrender.com//users`);
-    //   return res.json();
-    // },
+    
     queryFn: async () => {
       const res = await axiosSecure.get("/users");
 
