@@ -9,7 +9,7 @@ const Users = () => {
   const { refetch, data: users = [] } = useQuery({
     queryKey: ["users"],
     // queryFn: async () => {
-    //   const res = await fetch(`http://localhost:6001/users`);
+    //   const res = await fetch(`https://foodapp-server-1-a24t.onrender.com//users`);
     //   return res.json();
     // },
     queryFn: async () => {

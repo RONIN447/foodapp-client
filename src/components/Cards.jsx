@@ -26,7 +26,7 @@ const Cards = ({ item }) => {
     if(user && user.email){
         const cartItem = {menuItemId: _id, name, quantity : 1, image, price, email: user.email}
 
-        axios.post('http://localhost:6001/carts', cartItem)
+        axios.post('https://foodapp-server-1-a24t.onrender.com//carts', cartItem)
         .then((response) => {
           console.log(response);
           if(response){
