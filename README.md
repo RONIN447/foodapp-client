@@ -47,28 +47,6 @@ Frontend:
 
 The frontend is built with ReactJS and handles the user interface, including user authentication, food browsing, add-to-cart functionality, and Stripe payment integration.
 
-Installation (Frontend)
-Navigate to the frontend directory:
-
-bash
-Copy code
-cd frontend
-Install the dependencies:
-
-bash
-Copy code
-npm install
-Create a .env file in the frontend directory and add your environment variables (e.g., Stripe API key):
-
-env
-Copy code
-REACT_APP_STRIPE_PUBLIC_KEY=your_stripe_public_key
-Start the development server:
-
-bash
-Copy code
-npm start
-Open your browser and visit: http://localhost:3000
 
 Usage (Frontend):
 
